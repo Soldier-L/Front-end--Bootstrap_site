@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* (html[data-theme='dark']) quando o html fica "=dark" ele irá puxar das variáveis as cor, e a aonde tiver colocado as variáveis (em outras clases declaradas aqui no css) ele muda a cor. */
+html[data-theme='dark'] {
+   /*variáveis*/
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-headings: #D9D9D9;
+    --color-text: #B5B5B5;
+}
+
+/* (html)
+  As variáveis declarada aqui, é as da página quando o tema está branco (padrão), quando voltam do tema dark fica essas cores selecionadas na página. */
+ html {
+    
+    height: 100%;
+    font-family: 'Montserrat';
+
+    align-items: center;
+    justify-content: center;
+
+   /* variáveis */
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+}
+
+body {
+ margin: 0;
+ padding: 0;
+ color: #555;
+ font-family: Sans-serif, helvetica, arial;
+}
+
+/* corrigir bug do Bootstrap que deixa um espaço lateral em branco dando ideia que a página tem uma parte em branco na lateral sobrando*/
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/*row do menu light/dark-mode*/
+.linha-modo-escuro{
+  margin-top: -25px;
+  justify-content: center;
+}
+
+/*carrousel de imagens*/
+.carrousel {
+ max-height: 600px;
+}
+
+/* jumbotron*/
+.apresentacao {
+ background-color: var(--bg-panel);
+}
+
+/*jumbotron*/  
+.bem-vindo {
+text-align: center;
+color: var(--color-text);
+}
+
+/*foto circular do jumbotron*/
+.rounded-circle {
+margin: auto;
+display: block;
+}  
+
+/*título de vídeos recomendados*/
+.titulo {
+ text-align: center;
+ color: var(--color-headings);
+}
+
+/*vídeos recomendado*/
+.container-yt {
+text-align: center;
+background-color: var(--bg-panel);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*textos dos livros*/
+.text-center{
+  color: var(--color-headings);
+  
+}
+
+/*categoria menu*/
+.categorias ul {
+list-style: none;
+padding-left: 0; 
+}
+
+/*categoria menu*/
+.categorias li {
+ border-bottom: 1px solid white;
+ padding: 5px;
+ padding-left: 20px;
+ font-size: 18px;
+ background-color: #6C7A89;
+} 
+
+/*categoria menu*/
+.categorias a {
+ color: white;
+ text-decoration: none;
+}
+
+/*categoria menu*/
+.categorias nav h3 {
+  text-align: center;
+}
+
+/*categoria menu*/
+.categorias li:hover {
+ background-color: #A9A9A9;
+ transition: 0.8s;
+}
+
+/*imagens do livro*/
+.produtos img {
+  width: 100%;
+  border: 1px solid blue;
+}
+
+/*vídeos recomendados*/
+.video{
+ border: 1px solid blue;
+  
+}
+
+/*título da aba dos vídeos*/
+.titulo-yt{
+ color: var(--color-headings);
+  
+}

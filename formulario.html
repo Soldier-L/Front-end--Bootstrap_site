@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+      <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body>
+  
+<header>
+  <!-- Começo Navbar -->
+<nav class="navbar navbar-light" style="background-color: #FFFAFA;">
+  <a class="navbar-brand" href="#">Nome</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="index.html">Início <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="formulario.html">Fórmulario</a>
+      <a class="nav-link" href="#">Sobre nós</a>
+    </div>
+  </div>
+</nav>
+<!-- Fim Navbar -->
+</header>
+
+<!-- Começo jumbotron -->
+ <div class="jumbotron jumbotron-fluid apresentacao">
+  <div class="container bem-vindo">
+    <img src="Guitar.jpeg" class="rounded-circle" width="150" alt="...">
+    <br>
+    <h1 class="display-4">Fórmulário de cadastro</h1>
+    <p class="lead">Este é a parte de formulário do site  site feito por mim para experimentar o framework bootstrap.</p>
+  </div>
+</div>
+ <!-- Fim jumbotron -->
+ 
+<div class="row">
+   <!-- Início do menu categoria -->
+   <div class="col-md-3 col-lg-3 col-xs-12 categorias">
+     <nav>
+      <h3 class="text-center">Categorias</h3>
+       <ul>
+        <a href="#" target="_self"><li>Todas</li></a>
+        <a href="#" target="_self"><li>HTML</li></a>
+        <a href="#" target="_self"><li>CSS</li></a>
+        <a href="#" target="_self"><li>Javascript</li></a>
+        <a href="#" target="_self"><li>C++</li></a>
+       </ul>
+     </nav>
+   </div>
+   <!-- Fim do menu categoria -->
+  
+<main class=" col-md-9 col-lg-9  col-xs-12 produtos">
+ <hr>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+<form>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault01">Primeiro nome</label>
+      <input type="text" class="form-control" id="validationDefault01" value="Primeiro nome" required>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault02">Sobrenome</label>
+      <input type="text" class="form-control" id="validationDefault02" value="Sobrenome" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationDefault03">Cidade</label>
+      <input type="text" class="form-control" id="validationDefault03" required>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault04">Estado</label>
+      <select class="custom-select" id="validationDefault04" required>
+        <option selected disabled value="">Escolha...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationDefault05">CEP</label>
+      <input type="text" class="form-control" id="validationDefault05" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Aceito os termos e condições de privacidade
+      </label>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit">Enviar</button>
+</form>
+
+    </div>
+  </div>
+</div>
+
+</main>
+</div> <!-- Fim row --> 
+ 
+ <hr>
+ 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+
+  </body>
+  
+</html>

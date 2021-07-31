@@ -1,0 +1,131 @@
+/**
+html {
+    height: 100%;
+    font-family: 'Montserrat';
+
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    --bg: #FCFCFC;
+    --bg-panel: #EBEBEB;
+    --color-headings: #0077FF;
+    --color-text: #333333;
+}
+*/
+
+html[data-theme='dark'] {
+    --bg: #333333;
+    --bg-panel: #434343;
+    --color-headings: #3694FF;
+    --color-text: #B5B5B5;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+/*menu dark/light mode*/
+.modo-escuro{
+    border: 1px solid blue;
+    background-color: var(--bg-panel);
+    margin: 2em;
+    padding: 2em;
+    border-radius: 15px;
+
+
+    display: grid;
+    grid-template-columns: 80% auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "title switch"
+        "content content";
+      
+    h1 {
+        margin: 0;
+        color: var(--color-text);
+    }
+  
+    p {
+        color: var(--color-text);
+        grid-area: content;
+        font-size: 1.8em;
+        margin-top: 2em;
+    }
+  
+}
+
+/*título do menu dark/light mode*/
+.titulo-menu{
+ color: var(--color-headings);
+  
+}
+
+/*texto menu dark/light mode*/
+.text-menu{
+ color: var(--color-text);
+ grid-area: content;
+ font-size: 1.8em;
+ margin-top: 2em;
+}
+/*conteúdo do menu*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+/*conteúdo do menu - formato do  botão*/
+.dark-mode {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 52px;
+	height: 27px;
+	background: grey;
+	float: right;
+	border-radius: 100px;
+	position: relative;
+	
+}
+
+/*conteúdo do menu - circulo branco botão*/
+.dark-mode:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+/*conteúdo do menu*/
+input:checked + .dark-mode {
+	background: var(--color-headings);
+}
+
+/*conteúdo do menu*/
+input:checked + .dark-mode:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+/*conteúdo do menu - botão*/
+.toggle-container{
+  align-content: center;
+}
+
+/*conteúdo do menu*/
+.dark-mode:active:after {
+	width: 45px;
+}
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
